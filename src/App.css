@@ -1,33 +1,116 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+*, *::after, *::before {
+  box-sizing: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container {
+  margin: auto;
+  width: 1000px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contacts-container {
+  width: 500px;
+  height: 500px;
+  overflow: scroll;
+}
+
+#contacts-container h1 {
+  position: fixed;
+  width: 500px;
+  margin-top: 0;
+  background: rgb(135, 182, 69);
+  border-bottom: 3px solid rgb(110, 146, 59);
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#contacts-container ul {
+  margin-top: 75px;
+  padding-left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contacts-container li {
+  list-style: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(226, 226, 226);
+}
+
+.thumbnail-img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(39, 38, 38);
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+#contact-info {
+  width: 500px;
+  overflow: scroll;
+}
+
+.back-profile-img {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 285px;
+  background: rgb(169, 206, 117);
+  padding: 10px;
+}
+
+.back-profile-img button {
+  background: transparent;
+  border: none;
+  outline: 0;
+  color: black;
+}
+
+.back-profile-img button:hover {
+  color: gray;
+}
+
+.back-profile-img img {
+  margin-top: 20px;
+  margin-left: 155px;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+
+.email {
+  color: rgb(39, 38, 38);
+  font-weight: bolder;
+}
+
+.phoneNum {
+  color: rgb(39, 38, 38);
+  font-weight: bolder;
+}
+
+#contact-info p {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(226, 226, 226);
+}
+
+#contact-info p:nth-child(5) {
+  border: none;
+}
+
+#contact-info span {
+  margin-left: 10px;
 }
